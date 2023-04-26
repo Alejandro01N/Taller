@@ -42,6 +42,11 @@
                                 <input type="text" class="form-control" name="cedula" id="cedula" value="{{ old('cedula') }}" required>
                             </div>
                             <div class="">
+                                <label for="cedula" class="form-label">Cedula2:</label>
+                                <!-- los old nos sirven para que cuando hayga un error no se borren los datos que ya hemos escrito -->
+                                <input type="text" class="form-control" name="cedula" id="cedula" value="{{ old('cedula') }}" required>
+                            </div>
+                            <div class="">
                                 <label for="telefono" class="form-label telefono">Telefono:</label>
                                 <input type="text" maxlength="10" class="form-control" name="telefono" id="telefono" oninput="maxLengthTelefono(this)" value="{{ old('telefono') }}" required>
                             </div>
